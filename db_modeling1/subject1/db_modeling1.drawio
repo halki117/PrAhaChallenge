@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="NNirdLbudJ7Mtjtz16Ia" name="ページ1">
-        <mxGraphModel dx="1436" dy="1231" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1443" dy="1231" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -13,7 +13,7 @@
                 <mxCell id="104" style="edgeStyle=none;html=1;" parent="86" source="87" target="86" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="87" value="FK 顧客ID&#10;&#10;FK 店舗ID&#10;&#10;来店日時&#10;&#10;会計済み" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="86" vertex="1">
+                <mxCell id="87" value="FK 顧客ID&#10;&#10;FK 店舗ID&#10;&#10;注文日時&#10;&#10;会計済み" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="86" vertex="1">
                     <mxGeometry y="30" width="160" height="230" as="geometry"/>
                 </mxCell>
                 <mxCell id="88" value="価格" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
