@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="NNirdLbudJ7Mtjtz16Ia" name="ページ1">
-        <mxGraphModel dx="1404" dy="831" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="2125" dy="831" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -126,11 +126,167 @@
                 <mxCell id="161" value="注文ID&#10;&#10;商品名&#10;&#10;個数&#10;&#10;小計金額" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" parent="160" vertex="1">
                     <mxGeometry y="30" width="160" height="135" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="税率" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                <mxCell id="171" value="税率" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
                     <mxGeometry x="-268.5" y="153" width="160" height="115" as="geometry"/>
                 </mxCell>
-                <mxCell id="172" value="PK 税率ID&#10;&#10;税率（%）" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="171">
+                <mxCell id="172" value="PK 税率ID&#10;&#10;税率（%）" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" parent="171" vertex="1">
                     <mxGeometry y="30" width="160" height="85" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="cv9SAH0o7gOvNA9msIE4" name="クーポン仕様">
+        <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-526" y="330" width="225" height="446" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;jumpStyle=arc;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;curved=0;jumpSize=6;shadow=0;strokeColor=default;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-2" target="rNzWLZsIGYdF70MREUqC-39">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="445" y="569" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-2" value="注文" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="356" width="160" height="364" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-3" style="edgeStyle=none;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" edge="1" parent="rNzWLZsIGYdF70MREUqC-2" source="rNzWLZsIGYdF70MREUqC-4" target="rNzWLZsIGYdF70MREUqC-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-4" value="PK 注文ID&#10;&#10;FK 顧客ID&#10;&#10;FK 店舗ID&#10;&#10;注文日時&#10;&#10;会計済み" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-2">
+                    <mxGeometry y="30" width="160" height="334" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-5" value="価格" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="679" y="148" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-6" value="PK 価格ID&#10;&#10;価格値（円）&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-5">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-7" value="注文詳細" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-30" y="357" width="160" height="186" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-8" value="PK 注文詳細ID&#10;&#10;FK 注文ID&#10;&#10;FK 商品ID&#10;&#10;個数" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;labelBackgroundColor=default;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-7">
+                    <mxGeometry y="30" width="160" height="156" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-9" value="カテゴリ" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="679" y="298" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-10" value="PK カテゴリID&#10;&#10;カテゴリ名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-9">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-11" value="商品" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="148" width="160" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-12" value="PK 商品ID&#10;&#10;FK カテゴリID&#10;&#10;FK 価格ID&#10;&#10;商品名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-11">
+                    <mxGeometry y="30" width="160" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-13" value="顧客" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="460" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-14" value="PK 顧客ID&#10;&#10;顧客名&#10;&#10;電話番号" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-13">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-15" value="店舗" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="605" width="160" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-16" value="PK 店舗ID&#10;&#10;店舗名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-15">
+                    <mxGeometry y="30" width="160" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-17" value="VIEW 注文合計" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-493.5" y="571" width="160" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-18" value="注文ID&#10;&#10;合計皿数&#10;&#10;合計金額" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-17">
+                    <mxGeometry y="30" width="160" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-19" style="html=1;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="612" y="223" as="targetPoint"/>
+                        <mxPoint x="528" y="327" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-20" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="679.0000000000002" y="357.41" as="sourcePoint"/>
+                        <mxPoint x="613" y="357.40999999999997" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-21" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450.0000000000002" y="519.5799999999999" as="sourcePoint"/>
+                        <mxPoint x="370.0000000000002" y="519.5799999999999" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-22" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450.0000000000002" y="660" as="sourcePoint"/>
+                        <mxPoint x="370.0000000000002" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-23" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=-0.007;exitY=0.192;exitDx=0;exitDy=0;exitPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-12" target="rNzWLZsIGYdF70MREUqC-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="444" y="26" as="sourcePoint"/>
+                        <mxPoint x="32" y="-13" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-24" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210.00000000000023" y="456" as="sourcePoint"/>
+                        <mxPoint x="130.00000000000023" y="456" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-25" value="VIEW" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-526" y="299" width="49" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-26" value="オプション" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="453" y="756" width="160" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-27" value="オプション名&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-26">
+                    <mxGeometry y="30" width="160" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-28" value="注文詳細_オプション" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-41" y="640" width="171" height="231" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-29" value="PK 注文詳細_オプションID&#10;&#10;FK 注文詳細ID&#10;&#10;FK オプションID&#10;&#10;オプション付与数" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-28">
+                    <mxGeometry y="30" width="171" height="201" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-30" style="html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-27">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="132" y="807" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-31" style="html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.463;exitY=1.001;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-8" target="rNzWLZsIGYdF70MREUqC-28">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-30" y="491" as="sourcePoint"/>
+                        <mxPoint x="-211" y="339" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-32" value="VIEW 注文小計" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-493.5" y="363" width="160" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-33" value="注文ID&#10;&#10;商品名&#10;&#10;個数&#10;&#10;小計金額" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-32">
+                    <mxGeometry y="30" width="160" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-34" value="税率" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="-493.5" y="161" width="160" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-35" value="PK 税率ID&#10;&#10;税率（%）" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=1;rotatable=1;part=1;movable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-34">
+                    <mxGeometry y="30" width="160" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" edge="1" parent="1" source="rNzWLZsIGYdF70MREUqC-36" target="rNzWLZsIGYdF70MREUqC-39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-36" value="クーポン" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;labelBackgroundColor=#FFFF99;" vertex="1" parent="1">
+                    <mxGeometry x="-259.5" y="586" width="160" height="288" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-37" value="クーポンID&#10;&#10;クーポンコード&#10;&#10;クーポンの種類&#10;　商品全体からの値引き&#10;　セット商品から%引き&#10;&#10;値引き額&#10;&#10;値引率&#10;&#10;クーポン期限&#10;&#10;説明文" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-36">
+                    <mxGeometry y="30" width="160" height="258" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-38" value="クーポン_注文" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;labelBackgroundColor=#FFFF99;" vertex="1" parent="1">
+                    <mxGeometry x="-258" y="236" width="157" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="rNzWLZsIGYdF70MREUqC-39" value="FK クーポンID&#10;&#10;FK 注文ID&#10;&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="rNzWLZsIGYdF70MREUqC-38">
+                    <mxGeometry y="30" width="157" height="116" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
