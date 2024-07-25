@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="qUVYGY9ncLnhXLDi6-E8" name="ページ1">
+        <mxGraphModel dx="723" dy="600" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="2" target="iJ2gJyO2lyolsb5v6S-S-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="メッセージ" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="325" width="160" height="212" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="PK メッセージID&#10;&#10;FK ユーザーID&#10;&#10;FK チャンネルID&#10;&#10;本文&#10;&#10;投稿日&#10;&#10;更新日" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="2" vertex="1">
+                    <mxGeometry y="30" width="160" height="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="ユーザー" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="635" y="50" width="160" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="PK ユーザーID&#10;&#10;ユーザー名&#10;&#10;メールアドレス&#10;&#10;退会済フラグ" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="7" vertex="1">
+                    <mxGeometry y="30" width="160" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="チャンネル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="635" y="527" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="PK チャンネルID&#10;&#10;FK ワークスペースID&#10;&#10;チャンネル名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="9" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-13" value="スレッド" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="55" width="160" height="218" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-14" value="PK スレッドメッセージID&#10;&#10;FK ユーザーID&#10;&#10;FK メッセージID&#10;&#10;本文&#10;&#10;投稿日&#10;&#10;更新日&#10;&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="iJ2gJyO2lyolsb5v6S-S-13" vertex="1">
+                    <mxGeometry y="30" width="160" height="188" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-15" value="チャンネル参加者" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="635" y="260" width="160" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-16" value="PK チャンネルID&#10;&#10;FK チャンネルID&#10;&#10;FK ユーザーID&#10;&#10;チャンネル参加日&#10;&#10;退出済フラグ&#10;&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="iJ2gJyO2lyolsb5v6S-S-15" vertex="1">
+                    <mxGeometry y="30" width="160" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.006;exitY=0.17;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;exitPerimeter=0;entryX=1.013;entryY=0.095;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="8" target="iJ2gJyO2lyolsb5v6S-S-14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="339" y="123" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="8" target="iJ2gJyO2lyolsb5v6S-S-15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="9" target="iJ2gJyO2lyolsb5v6S-S-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.003;exitY=0.406;exitDx=0;exitDy=0;entryX=1.006;entryY=0.323;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;exitPerimeter=0;" parent="1" source="10" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-24" value="ワークスペース参加者" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="50" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-25" value="PK ワークスペース参加者ID&#10;&#10;FK ユーザーID&#10;&#10;FK ワークスペースID&#10;&#10;ワークスペース参加日&#10;&#10;退出済フラグ&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="iJ2gJyO2lyolsb5v6S-S-24" vertex="1">
+                    <mxGeometry y="30" width="180" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="iJ2gJyO2lyolsb5v6S-S-27" target="iJ2gJyO2lyolsb5v6S-S-25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-27" value="ワークスペース" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="298" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-28" value="PK ワークスペースID&#10;&#10;ワークスペース名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="iJ2gJyO2lyolsb5v6S-S-27" vertex="1">
+                    <mxGeometry y="30" width="180" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.374;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="iJ2gJyO2lyolsb5v6S-S-27" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iJ2gJyO2lyolsb5v6S-S-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="872" y="111" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="263" y="615" width="160" height="116" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Item 1" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="15">
+                    <mxGeometry y="26" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Item 2" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="15">
+                    <mxGeometry y="56" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="15">
+                    <mxGeometry y="86" width="160" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
