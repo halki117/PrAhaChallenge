@@ -116,12 +116,10 @@ FROM article_history
 WHERE id = 4;
 
 
--- 記事の履歴一覧を取得する
--- SELECT * FROM article AS a
--- JOIN article_history AS ah
--- ON a.id = ah.article_id
--- WHERE handled_at = (SELECT MAX(handled_at) FROM article_history);
 
+-- 最新状態の記事を一覧表示できる
+  -- 言い換えれば「特定のユーザーに紐づく記事の最新の履歴一覧」との認識
+  -- 例えば、某ユーザー（ID:1）がいて、そのユーザーに紐づく記事データがいくつか合った場合、以下のクエリで取得できると思います。
 SELECT a.*, ah.*
 FROM articles AS a
 JOIN article_history AS ah
@@ -130,7 +128,8 @@ WHERE ah.handled_at = (
     SELECT MAX(ah2.handled_at)
     FROM article_history AS ah2
     WHERE ah2.article_id = ah.article_id
-);
+)
+AND ah.edit_user_id = 1;
 
 
 ```
